@@ -71,10 +71,10 @@ for item in news_data:
         }
     }
 
-logging.debug(f"NOTION_API_TOKEN: {NOTION_API_TOKEN}")
-logging.debug(f"DATABASE_ID: {DATABASE_ID}")
+# logging.debug(f"NOTION_API_TOKEN: {NOTION_API_TOKEN}")
+# logging.debug(f"DATABASE_ID: {DATABASE_ID}")
 
-notion_response = requests.post(notion_url, headers=notion_headers, data=json.dumps(notion_data))
-print(notion_response.status_code)
-print(notion_response.json())
-print(f"Notion 업로드 결과 (title: {item['title']}): {notion_response.status_code}, {notion_response.json()}")
+    notion_response = requests.post(notion_url, headers=notion_headers, data=json.dumps(notion_data))
+    print(notion_response.status_code)
+    print(notion_response.json())
+    print(f"Notion 업로드 결과 (title: {item['title']}): {notion_response.status_code}, {notion_response.json()}")
