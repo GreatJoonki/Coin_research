@@ -1,5 +1,5 @@
 
-name: Run GoodBoy Report Daily
+name: Coin_news_research
 
 on:
   schedule:
