@@ -51,7 +51,6 @@ for article in articles:
     except Exception as e:
         logger.error(f"요약 실패: {e}, article: {article}")
 
-]
 
 # Notion 업로드
 notion_url = "https://api.notion.com/v1/pages"
