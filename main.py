@@ -49,7 +49,7 @@ for article in articles:
             "summary": summary
         })
     except Exception as e:
-        logger.error(f"요약 실패: {e}, article: {article}")
+        logging.error(f"요약 실패: {e}, article: {article}")
 
 
 # Notion 업로드
@@ -71,8 +71,8 @@ for item in news_data:
         }
     }
 
-logger.debug(f"NOTION_API_TOKEN: {NOTION_API_TOKEN}")
-logger.debug(f"DATABASE_ID: {DATABASE_ID}")
+logging.debug(f"NOTION_API_TOKEN: {NOTION_API_TOKEN}")
+logging.debug(f"DATABASE_ID: {DATABASE_ID}")
 
 notion_response = requests.post(notion_url, headers=notion_headers, data=json.dumps(data))
 print(notion_response.status_code)
