@@ -31,4 +31,4 @@ jobs:
           NAVER_CLIENT_SECRET : ${{secrets.NAVER_CLIENT_SECRET}}
           NOTION_API_TOKEN :  ${{secrets.NOTION_API_TOKEN}}
           DATABASE_ID :  ${{secrets.DATABASE_ID}}
-        run: python main(2).py
+        run: python "main(2).py"
