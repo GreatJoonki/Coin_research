@@ -12,7 +12,7 @@ NAVER_CLIENT_SECRET = os.getenv("NAVER_CLIENT_SECRET")
 NOTION_API_TOKEN = os.getenv("NOTION_API_TOKEN")
 DATABASE_ID = os.getenv("DATABASE_ID")
 
-def fetch_news(query="하남 교산", display=5):
+def fetch_news(query="비트코인 알트코인 코인", display=5):
     url = "https://openapi.naver.com/v1/search/news.json"
     headers = {
         "X-Naver-Client-Id": NAVER_CLIENT_ID,
